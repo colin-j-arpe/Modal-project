@@ -12,6 +12,7 @@ body	{
 }
 
 #head-co-name	{
+	width: 1500px;
 	text-align:	center;
 	color: #2e2a64;
 	font-size: 48px;
@@ -40,13 +41,11 @@ body	{
 	height: 300px;
 	position: fixed;
 	top: 50%;
-	left: 50%
-	margin-top: 150px;
-	margin-left: 250px;
-
-
+	left: 50%;
+	margin-top: -150px;
+	margin-left: -250px;
 	background-color: #f28034;
-
+	visibility: hidden;
 }
 
 #hero-image	{
