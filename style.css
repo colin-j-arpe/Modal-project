@@ -7,7 +7,9 @@ body	{
 	position: fixed;
 	top: 0;
 	width: 100%;
-	height: 100px;
+	height: 80px;
+	background-color: #f7ebad;
+	opacity: 50%;
 }
 
 #head-logo	{
@@ -30,13 +32,15 @@ body	{
 	padding: 0;
 	margin:	0;
 }
-
-*/#head-nav	{
-	margin-left: 40px;
-}
+	*/
+#head-nav	{
+	margin-left: 200px;
+}	
 
 #nav-menu	{
 	margin: 0 0 0 40px;
+	display: flex;
+	justify-content: center;
 }
 
 .nav-menu-item	{
@@ -51,15 +55,39 @@ body	{
 }
 
 #modal-window	{
-	width: 500px;
-	height: 300px;
+	width: 400px;
+	height: 160px;
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	margin-top: -150px;
-	margin-left: -250px;
+	margin-top: -80px;
+	margin-left: -200px;
 	background-color: #f28034;
+	border: 6px inset #f7c19d;
 	visibility: hidden;
+}
+
+#modal-title	{
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#login	{
+	width: 100%;
+	margin: 10px auto;
+}
+
+.input-bar 	{
+	display: block;
+	margin: 10px auto;
+	width: 250px;	
+}
+
+#account-modal	{
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
 }
 
 #close-modal	{
@@ -70,9 +98,9 @@ body	{
 
 #hero-image	{
 	width: 100%;
-	height: 400px;
+	height: 250px;
 	background-color: #c1b059;
-	margin-top: 100px	;
+	margin-top: 80px	;
 }
 
 h1	{
@@ -89,10 +117,17 @@ h1	{
 	float: right;
 }
 
+h3	{
+	text-align: center;
+}
+
 .content-image	{
-	width: 80%;
+	width: 400px;
 	height: 200px;
+	margin: 0 auto;
 	background-color: #97852c;
 }
 
-.content-desc	{}
+.content-desc	{
+	margin: 20px 80px;
+}

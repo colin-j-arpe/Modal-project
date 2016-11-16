@@ -1,10 +1,10 @@
-var trigger = document.getElementById("head-logo")
+var trigger = document.getElementById("head-logo");
 var popup = document.getElementById("modal-window");
 var close = document.getElementById("close-button");
 
 trigger.addEventListener("click", revealWindow);
 
-setTimeout (revealWindow, 2000);
+setTimeout (revealWindow, 500);
 
 close.addEventListener("click", removeWindow);
 
