@@ -68,7 +68,7 @@ body	{
 	left: 50%;
 	margin-top: -80px;
 	margin-left: -200px;
-	background-color: #f28034;
+	background-color: #f69f48;
 	border: 6px inset #f7c19d;
 	visibility: hidden;
 }
@@ -81,7 +81,7 @@ body	{
 	left: 50%;
 	margin-top: -125px;
 	margin-left: -200px;
-	background-color: #f28034;
+	background-color: #f69f48;
 	border: 6px inset #f7c19d;
 	visibility: hidden;
 }
@@ -112,6 +112,16 @@ body	{
 
 .input-bar-short.right	{
 	margin-left: 12px;
+}
+
+#checkOrX	{
+	position: relative;
+	top: 3px;
+	left: 5px;
+	display: inline;
+	width: 20px;
+	height: 20px;
+	visibility: hidden;
 }
 
 .buttons-left	{
