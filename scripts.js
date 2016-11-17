@@ -31,6 +31,7 @@ function revealAccount (event)	{
 }
 
 function removeAccount (event)	{
+	check.style.visibility = "hidden";
 	account.style.visibility = "hidden";
 	revealLogIn();
 }
