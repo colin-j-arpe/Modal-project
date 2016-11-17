@@ -4,7 +4,7 @@ var close = document.getElementById("close-button");
 
 trigger.addEventListener("click", revealWindow);
 
-setTimeout (revealWindow, 500);
+setTimeout (revealWindow, 5000);
 
 close.addEventListener("click", removeWindow);
 
