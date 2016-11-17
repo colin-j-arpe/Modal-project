@@ -8,7 +8,7 @@ body	{
 	src: url(Images/century-gothic.ttf);
 }
 
-#page-head	{
+.page-head	{
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -22,7 +22,7 @@ body	{
 	height: 100px;
 }
 
-#head-co-name	{
+.head-co-name	{
 	top: 0;
 	text-align:	center;
 	color: #2e2a64;
@@ -39,11 +39,11 @@ body	{
 	margin:	0;
 }
 	*/
-#head-nav	{
+.head-nav	{
 	margin: 10px 0 10px 200px;
 }	
 
-#nav-menu	{
+.nav-menu	{
 	margin: 0 0 0 40px;
 	display: flex;
 	justify-content: center;
@@ -73,7 +73,7 @@ body	{
 	visibility: hidden;
 }
 
-#modal-title	{
+.modal-title	{
 	font-size: 16px;
 	font-weight: bold;
 	text-align: center;
@@ -90,19 +90,19 @@ body	{
 	width: 250px;	
 }
 
-#account-modal	{
+.account-modal	{
 	position: absolute;
 	bottom: 10px;
 	left: 10px;
 }
 
-#close-modal	{
+.close-modal	{
 	position: absolute;
 	bottom: 10px;
 	right: 10px;
 }
 
-#hero-image	{
+.hero-image	{
 	background-image: url(Images/skyline.jpg);
 	background-position: center;
 	background-size: 100%;
@@ -135,7 +135,7 @@ h2	{
 
 h3	{
 	text-align: center;
-}
+}	
 
 .content-image	{
 	width: 400px;
@@ -146,4 +146,4 @@ h3	{
 
 .content-desc	{
 	margin: 20px 80px;
-}
+}	
