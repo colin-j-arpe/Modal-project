@@ -1,17 +1,32 @@
 var trigger = document.getElementById("head-logo");
-var popup = document.getElementById("modal-window");
+var logIn = document.getElementById("login-window");
+var newAccount = document.getElementById("account-button");
 var close = document.getElementById("close-button");
+var account = document.getElementById("account-window");
+var cancel = document.getElementById("cancel-button");
 
-trigger.addEventListener("click", revealWindow);
+trigger.addEventListener("click", revealLogIn);
 
-setTimeout (revealWindow, 5000);
+setTimeout (revealLogIn, 500);
 
-close.addEventListener("click", removeWindow);
+newAccount.addEventListener("click", revealAccount);
+close.addEventListener("click", removeLogIn);
+cancel.addEventListener("click", removeAccount);
 
-function revealWindow (event)	{
-	popup.style.visibility = "visible";
+function revealLogIn (event)	{
+	logIn.style.visibility = "visible";
 }
 
-function removeWindow (event)	{
-	popup.style.visibility = "hidden";
+function removeLogIn (event)	{
+	logIn.style.visibility = "hidden";
+}
+
+function revealAccount (event)	{
+	removeLogIn();
+	account.style.visibility = "visible";
+}
+
+function removeAccount (event)	{
+	account.style.visibility = "hidden";
+	revealLogIn();
 }

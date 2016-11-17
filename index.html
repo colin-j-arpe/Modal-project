@@ -23,20 +23,42 @@
 			</nav>
 		</div>
 	</div>
-	<div id="modal-window">
-		<p class="modal-title">Login now to access your account settings</p>
-		<form id="login">
+	
+	<div id="login-window">
+		<p class="window-title">Login to access your account settings</p>
+		<form id="login" class="entry">
 			<input class="input-bar" placeholder="User Name" type="text" name="userID">
 			<input class="input-bar" placeholder="Password" type="password" name="password">
 		</form>
-		<div class="account-modal">
+		<div class="buttons-left">
 			<button id="account-button" type="button">Create New Account</button>
 		</div>
-		<div class="close-modal">
-			<button id="submit-button" type="submit">Submit</button>
+		<div class="buttons-right">
+			<button id="signin-button" type="submit">Sign In</button>
 			<button id="close-button" type="button">Close</button>
 		</div>
 	</div>
+	
+	<div id="account-window">
+		<p class="window-title">Open your account now to get started right away</p>
+		<form id="account" class="entry">
+			<input class="input-bar-short" placeholder="First Name" type="text" name="firstName">
+			<input class="input-bar-short right" placeholder="Last Name" type="text" name="lastName">
+			<input class="input-bar" placeholder="User Name" type="text" name="userID">
+			<input class="input-bar" placeholder="e-Mail Address" type="text" name="eMail">
+			<input class="input-bar-short" placeholder="Password" type="password" name="password">
+			<input class="input-bar-short right" placeholder="Confirm Password" type="password" name="passwordC">
+			<input class="input-bar" placeholder="Mother's Maiden Name" type="text" name="maiden">
+			<input class="input-bar" placeholder="Social Security Number" type="text" name="eMail">
+			<input class="input-bar" placeholder="Bank Routing Number" type="text" name="routing">
+			<input class="input-bar" placeholder="Checking Account Number" type="text" name="checking">
+		</form>
+		<div class="buttons-right">
+			<button id="submit-button" type="submit">Submit</button>
+			<button id="cancel-button" type="button">Cancel</button>
+		</div>
+	</div>
+	
 	<div class="hero-image">
 		<p></p>
 	</div>
