@@ -1,4 +1,6 @@
 var trigger = document.getElementById("head-logo");
+var menuButton = document.getElementById("menu-button");
+var menuPulldown = document.getElementById("menu-pulldown");
 var logIn = document.getElementById("login-window");
 var newAccount = document.getElementById("account-button");
 var close = document.getElementById("close-button");
@@ -7,7 +9,25 @@ var passwordArea = document.getElementsByName("password");
 	var	check = document.getElementById("checkOrX");
 var cancel = document.getElementById("cancel-button");
 
-trigger.addEventListener("click", revealLogIn);
+// trigger.addEventListener("click", openMenu);
+
+menuButton.addEventListener("mouseover", openMenu);
+menuPulldown.addEventListener("mouseleave", closeMenuDelay);
+
+function openMenu ()	{
+	menuPulldown.style.visibility = "visible";
+}
+
+function closeMenuDelay ()	{
+	var backOnMenu = window.setTimeout (closeMenu, 300)
+	menuPulldown.addEventListener("mouseover", keepMenu);
+	function closeMenu ()	{
+		menuPulldown.style.visibility = "hidden";
+	}
+	function keepMenu ()	{
+		window.clearTimeout(backOnMenu);
+	}
+}
 
 setTimeout (revealLogIn, 500);
 
