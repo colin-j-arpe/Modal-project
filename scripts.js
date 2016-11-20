@@ -29,7 +29,7 @@ function closeMenuDelay ()	{
 	}
 }
 
-setTimeout (revealLogIn, 500);
+// setTimeout (revealLogIn, 500);
 
 newAccount.addEventListener("click", revealAccount);
 close.addEventListener("click", removeLogIn);
