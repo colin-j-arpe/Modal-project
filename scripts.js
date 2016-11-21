@@ -3,10 +3,12 @@ var menuButton = document.getElementById("menu-button");
 var menuPulldown = document.getElementById("menu-pulldown");
 var logIn = document.getElementById("login-window");
 var newAccount = document.getElementById("account-button");
+var signIn = document.getElementById("signin-button");
 var close = document.getElementById("close-button");
 var account = document.getElementById("account-window");
 var passwordArea = document.getElementsByName("password");
 var	check = document.getElementById("checkOrX");
+var submit = document.getElementById("submit-button");
 var cancel = document.getElementById("cancel-button");
 var sidebarMenu = document.getElementById("sidebar-menu");
 var sidebarItem = document.getElementsByClassName("sidebar-item")
@@ -31,10 +33,12 @@ function closeMenuDelay ()	{
 	}
 }
 
-// setTimeout (revealLogIn, 500);
+setTimeout (revealLogIn, 3000);
 
 newAccount.addEventListener("click", revealAccount);
+signIn.addEventListener("click", removeLogIn);
 close.addEventListener("click", removeLogIn);
+submit.addEventListener("click", removeAccount);
 cancel.addEventListener("click", removeAccount);
 
 passwordArea[2].addEventListener("keyup", comparePasswords);
