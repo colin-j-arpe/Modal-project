@@ -185,9 +185,15 @@ body	{
 .sidebar	{
 	float: right;
 	width: 26%;
+	height: 800px;
+	overflow: auto;
 	padding: 0 10px;
 	/*border: 1px solid black;*/
 	margin:	0;
+}
+
+.sidebar.more	{
+	height: 100px;
 }
 
 .content-head	{
@@ -239,13 +245,17 @@ h3	{
 
 .content-image	{
 	width: 80%;
-	height: 200px;
+	text-align: center;
+	overflow: hidden;
 	margin: 0 auto;
-	background-color: #97852c;
 }
 
 .content-image.top 	{
 	width: 90%;
+}
+
+.image-file	{
+	width:	100%;
 }
 
 .content-desc	{
@@ -257,7 +267,7 @@ h3	{
 	width: 90%;
 }
 
-.sidebar-menu	{
+#sidebar-menu	{
 	width: 80%;
 	font-size: 16px;
 }

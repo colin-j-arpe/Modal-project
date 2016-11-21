@@ -6,8 +6,10 @@ var newAccount = document.getElementById("account-button");
 var close = document.getElementById("close-button");
 var account = document.getElementById("account-window");
 var passwordArea = document.getElementsByName("password");
-	var	check = document.getElementById("checkOrX");
+var	check = document.getElementById("checkOrX");
 var cancel = document.getElementById("cancel-button");
+var sidebarMenu = document.getElementById("sidebar-menu");
+var sidebarItem = document.getElementsByClassName("sidebar-item")
 
 // trigger.addEventListener("click", openMenu);
 
@@ -82,4 +84,23 @@ function samePassword ()	{
 			return false;
 	}
 	return true;
+}
+
+sidebarMenu.addEventListener("change", selectStories);
+
+function selectStories ()	{
+	var selectedCategory = sidebarMenu.value;
+	if (selectedCategory === "show-all")	{
+		for (var i = 0; i < sidebarItem.length; i++)	{
+			sidebarItem[i].style.display = "block";
+		}
+	}	else 	{
+		for (var i = 0; i < sidebarItem.length; i++)	{
+			sidebarItem[i].style.display = "none";
+		}
+		var showCategory = document.getElementsByClassName(selectedCategory);
+		for (var i = 0; i < showCategory.length; i++)	{
+			showCategory[i].style.display = "block";
+		}
+	}
 }

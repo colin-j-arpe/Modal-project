@@ -76,7 +76,7 @@
 			<h2>Page subhead: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h2>
 		</div>
 		<div class="content-box top">
-			<div class="content-image top"></div>
+			<div class="content-image top"><img class="image-file" src="Images/group-photo.jpg"></div>
 			<p class="content-desc top">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
@@ -84,30 +84,30 @@
 		</div>
 		<div class="content-box">
 			<h3>First item head</h3>
-			<div class="content-image"></div>
+			<div class="content-image"><img class="image-file" src="Images/trading-floor.jpg"></div>
 			<p class="content-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 		</div>
 			<div class="content-box">
 			<h3>Second item head</h3>
-			<div class="content-image"></div>
+			<div class="content-image"><img class="image-file" src="Images/briefcase.jpg"></div>
 			<p class="content-desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 		</div>
 			<div class="content-box">
 			<h3>Third item head</h3>
-			<div class="content-image"></div>
+			<div class="content-image"><img class="image-file" src="Images/dee-snider.jpg"></div>
 			<p class="content-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 		</div>
 			<div class="content-box">
 			<h3>Fourth item head</h3>
-			<div class="content-image"></div>
+			<div class="content-image"><img class="image-file" src="Images/bloody-axe.jpg"></div>
 			<p class="content-desc">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
 	</div>
 	<div class="sidebar">
 		<h2>Other top stories</h2>
 		<div>
-			<p>Show items related to:</p>
-			<select class="sidebar-menu">
+			<p><strong>Show items related to:</strong></p>
+			<select id="sidebar-menu">
 				<option value="show-all">All topics</option>
 				<option value="portfolio">My portfolio</option>
 				<option value="markets">Financial markets</option>
@@ -134,7 +134,7 @@
 			<a class="sidebar-link" href=""><h4>Portfolio: It's a weird word with three Os</h4></a>
 			<p class="sidebar-text">It's one of those words that sounds wrong if you say it enough times</p>
 		</div>
-		<div class="sidebar-item portfolio">
+		<div class="sidebar-item">
 			<a class="sidebar-link" href=""><h4>I don't think this is the Jets' year</h4></a>
 			<p class="sidebar-text">This article should appear only in the "All topics" category.</p>
 		</div>
@@ -166,6 +166,20 @@
 			<a class="sidebar-link" href=""><h4>Roth said to top short list of possible favourites to replace Pope Francis</h4></a>
 			<p class="sidebar-text">This article should appear in both the "My portfolio" and the "David Lee Roth" categories.</p>
 		</div>
+		<div class="sidebar-item">
+			<a class="sidebar-link" href=""><h4>Avast, ye scurvy dogs!  Prepare to be plundered!</h4></a>
+			<p class="sidebar-text">This article should appear only in the "All topics" category.</p>
+		</div>
+		<div class="sidebar-item portfolio markets">
+			<a class="sidebar-link" href=""><h4>How much should you have riding on NASDAQ tracker funds at this point?  I mean, really.</h4></a>
+			<p class="sidebar-text">This article should appear in the both "My portfolio" and the "Financial markets" categories.</p>
+		</div>
+		<div class="sidebar-item portfolio markets">
+			<a class="sidebar-link" href=""><h4>Equity vs fixed income: evaluating your Risk Ratio<sup>TM</sup></h4></a>
+			<p class="sidebar-text">This article should appear in both the "My portfolio" and the "Financial markets" categories.</p>
+		</div>
+	</div>
+	<div class="sidebar more">
 		<a class="sidebar-link" href=""><h4>More top stories</h4></a>
 	</div>
 </body>
